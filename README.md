@@ -24,4 +24,4 @@ I chose to present contrasting perspectives on Global Warming to examine the rat
 
 I use a couple of Rhetoric/Framing techniques to make the visualization appealing and effectively convey the impact of how a few simple modifications on the visualization can manipulate the viewer’s perception.
 
-For a more detailed overview of the visualization, approach, and conclusion can be found here - https://www.shahaesha.com/project/climate_change/
+A more detailed overview of the visualization, approach, and conclusion can be found here - https://www.shahaesha.com/project/climate_change/
