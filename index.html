@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Change Visualizations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="header-container">
+        <h1>The Heat Debate: Are humans responsible for Global Warming?</h1>
+    </div>
+    <div class="chart-container">
+        <div class="chart-wrapper">
+            <div class="left-chart" id="left-chart"></div>
+            <div class="chart-description" id="left-description">
+                <h4>Left Chart ("YES")</h4>
+                <p>It visualizes rising global temperatures over time, emphasizing the correlation with human
+                activities. It argues that humans have made significant damaging contributions to climate change and
+                temperatures are in fact rising sharply, implying the urgency of the matter and immediate
+                call-to-action. <br><br>
+
+                Some notable events that indicate strong human contribution are: <br>
+                1. The non-decreasing graph post World War II in 1939-1945, likely due to substantial increase in urbanization, modernization and industrialization. <br>
+                2. We also see a high spike in the temperatures in 2011, that is when the Fukushima disaster occurred - yet another human-induced tragedy.
+            
+            </p>
+                </div>
+                </div>
+                
+                <div class="chart-wrapper">
+                    <div class="right-chart" id="right-chart"></div>
+                    <div class="chart-description" id="right-description">
+                        <h4>Right Chart ("NO")</h4>
+                        <p>Contrastingly, the right chart takes a broader perspective and showcases a relatively stable graph,
+                            indicating that it's not a real threat. It tends to speak for the natural ebb
+                            and flow of climate conditions, suggesting that current warming trends may be part of a larger natural cycle
+                            rather than
+                            solely due to human influence.</p>
+                            
+                    </div>
+                </div>
+                </div>
+                <div class="description-container">
+                    <p>
+                        <b>Introduction: </b>
+            Climate change and global warming are controversial topics, with debates centering around the extent of
+            human
+            influence, the urgency of action, and the potential consequences. Proponents of immediate action argue that
+            human
+            activities are driving climate change with severe consequences, while skeptics may question the extent of
+            human
+            impact or the reliability of climate models.
+            <br><br>
+            <b> Dataset Source: </b> <a href="https://data.giss.nasa.gov/">NASA's Climate Change Data</a>. <br>
+            <b>Navigating to the Dataset:</b> <br>
+            - On the home page of the link above: Earth Observations -> Temperature -> GISS Surface Temperature Analysis
+            (GISTEMP). <br>
+            - Once on the GISS Surface Temperature Analysis (GISTEMP v4) page, scroll down to "Tables of Global and
+            Hemispheric Monthly Means and Zonal Annual Means". <br>
+            - The dataset used is the CSV file for "Global-mean monthly, seasonal, and annual means, 1880-present,
+            updated through most recent month". <br>
+
+            <b>Data pre-processing:</b> Both the charts use the same data. However, I have made a few simple
+            modifications to the dataset - <br>
+            1. Filtered the data to only contain the values starting from the Year 1980. <br>
+            2. Aggregated the values of the 12 months of the year (Jan-Dec) each given in the dataset to get a "mean"
+            for each year. This "mean" of each year is represented in the line charts.<br><br>
+
+            <b>Rhetoric/Framing Techniques used:</b><br>
+            <b>1. Y-Axis Scale Range:</b> The scale for the y-axis for both the charts is different. The scale for the chart on the
+            left is fitted precisely to the minimum and maximum values in the dataset thus offering a detailed, microscopic view of
+            the plot. On the contrary, the scale for the right chart extends far beyond the dataset's extreme values. This creates
+            the illusion of minimal variation in the graph, suggesting a relatively stable trend. <br>
+            <b>2. Color Scheme:</b> The color palette for both charts is thoughtfully selected, intentionally creating a
+            subconscious mental bias. The left chart is drawn with a vibrant, warm red color, instilling a sense of
+            urgency and suggesting potential negative impacts. Conversely, the right chart is presented in a natural, earthy, and
+            tranquil blue tone, encouraging a more relaxed interpretation.
+        </p>
+    </div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+.left-chart,
+.right-chart {
+    padding: 10px;
+    margin: 20px;
+    width: 70%;
+    height: 800px;
+}
+
+.line {
+    stroke-width: 3px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.header-container {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+    padding: 30px;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.chart-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.chart-description {
+    text-align: left;
+    width: 80%;
+    margin: 20px;
+}
+
+.chart-description h4 {
+    color: #333;
+    text-align: center;
+}
+
+.chart-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.description-container p{
+    background-color: #f4f4f4;
+    padding: 25px;
+}
